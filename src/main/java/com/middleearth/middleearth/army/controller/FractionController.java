@@ -26,7 +26,8 @@ public class FractionController {
     }
 
     @PutMapping(path = "/{id}")
-    public Fraction updateFraction(@RequestBody UpdateFractionRequest updateFractionRequest, @PathVariable int id) {
+    public Fraction updateFraction(@RequestBody UpdateFractionRequest updateFractionRequest,
+                                   @PathVariable int id) {
         return fractionService.updateFraction(updateFractionRequest, id);
     }
 
